@@ -7,6 +7,7 @@
   --foreground: #171717;
   --primary500: #a649ff;
   --primary600: #9524ff;
+  --seed: #6750a4;
   --primary800: #5c00b3;
   --baseWhite: #fdf7ff;
   --primary: #8300ff;
@@ -22,3 +23,10 @@ body {
 .active {
   color: var(--primary);
 }
+/* @layer utilities {
+  .hero-vector {
+    @apply absolute right-0 top-0 h-screen w-screen bg-hero bg-cover bg-center md:-right-28 xl:-top-60;
+  }
+} */
+
+

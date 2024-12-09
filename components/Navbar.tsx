@@ -2,9 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { NavLinks } from "@/utils/constants";
 import Button from "./Button";
+import { BsArrowRight } from "react-icons/bs";
 const Navbar = () => {
   return (
-    <header className="bg-[--baseWhite] h-[100px] w-full border-b-[0.5px] border-[--secondary] px-10 py-3">
+    <header className="bg-[--baseWhite] h-[100px] w-full border-b-[0.5px] border-[--secondary] px-20 py-3">
       <nav className="flex justify-between items-center">
         <Link href={"/"} className="logo flex gap-1 items-center">
           <Image src="/ff-logo.png" alt="logo" width={80} height={80} />
@@ -16,13 +17,13 @@ const Navbar = () => {
               <Link
                 href={link.link}
                 key={link.key}
-                className="text-[--foreground] cursor-pointer transition-all hover:text-[--primary]"
+                className="text-[--foreground] text-nowrap cursor-pointer transition-all hover:text-[--primary]"
               >
                 {link.name}
               </Link>
             ))}
           </ul>
-          <Button text="Register" />
+          <Button text="Register" icon={<BsArrowRight />} />
         </div>
       </nav>
     </header>

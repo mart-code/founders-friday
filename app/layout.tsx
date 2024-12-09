@@ -21,7 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} antialiased w-full max-w-[1440px] mx-auto bg-[--baseWhite]`}>
+      <body
+        className={`${montserrat.className} antialiased w-full max-w-[1728px] relative mx-auto bg-[--baseWhite] overflow-x-hidden`}
+      >
         <Navbar />
         {children}
         <Footer />
