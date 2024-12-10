@@ -2,7 +2,7 @@ import { BsPlus } from "react-icons/bs";
 
 const WhatWeOffer = () => {
   return (
-    <div className="px-20 mx-auto min-h-[500px] w-full mt-[180px]">
+    <div className="lg:px-20 px-5 mx-auto min-h-[500px] w-full mt-[180px]">
       <h1 className="text-center text-5xl font-bold mb-[90px]">
         What We Offer
       </h1>

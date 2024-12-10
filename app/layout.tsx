@@ -9,8 +9,6 @@ const montserrat = Montserrat({
   weight: ["400", "500", "600", "700", "800", "900"],
 });
 
-const cursive = Cedarville_Cursive({ subsets: ["latin"], weight: ["400"] });
-
 export const metadata: Metadata = {
   title: "Founders Friday",
   description: "Connect, Collaborate, Innovate",

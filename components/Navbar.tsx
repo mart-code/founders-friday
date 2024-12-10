@@ -55,7 +55,7 @@ const Navbar = () => {
           className={
             !nav
               ? "hidden"
-              : "absolute top-0 left-0 w-full h-screen bg-base-White text-base-Black flex flex-col justify-evenly z-10 items-center"
+              : "absolute top-0 left-0 w-full h-screen bg-base-White text-base-Black flex flex-col justify-start gap-4 z-10 items-center"
           }
         >
           {NavLinks.map((link: any) => (

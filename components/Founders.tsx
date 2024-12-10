@@ -3,15 +3,15 @@ import { BsArrowRight } from "react-icons/bs";
 import Button from "./Button";
 const Founders = () => {
   return (
-    <div className="mt-[180px] px-20 mx-auto flex justify-between gap-8 items-start basis-1/2 lg:flex-nowrap flex-wrap">
-      <div className="flex flex-col items-start justify-center flex-1">
-        <p className="font-bold lg:text-3xl text-[--primary800] max-w-[500px]">
+    <div className="mt-[180px] lg:px-20 px-5 mx-auto flex justify-between gap-8 items-start basis-1/2 lg:flex-nowrap flex-wrap">
+      <div className="flex flex-col items-start justify-center basis-full lg:basis-1/2 flex-1">
+        <p className="font-bold lg:text-3xl text-xl text-[--primary800] max-w-[500px]">
           Founders Friday
         </p>
-        <h2 className="font-bold lg:text-6xl">
+        <h2 className="font-bold lg:text-6xl text-4xl text-black">
           What Happens At Founders Friday
         </h2>
-        <p className="lg:text-2xl font-normal text-[--secondary] leading-7 my-[45px]">
+        <p className="lg:text-2xl text-base font-normal text-secondary-50 leading-7 my-[45px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac
           rutrum felis. Nulla nibh lorem, facilisis vel est at, vehicula
           dignissim lacus. Cras sagittis imperdiet dolor, eget accumsan leo
@@ -26,7 +26,7 @@ const Founders = () => {
           variant="btn-purple"
         />
       </div>
-      <div className="relative min-w-[500px] min-h-[500px] basis-1/2">
+      <div className="relative min-w-[500px] min-h-[500px] lg:basis-1/2 basis-full">
         <Image
           src={"/IMG_2501 3.png"}
           width={500}

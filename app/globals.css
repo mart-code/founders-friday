@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: monoCursive;
+  src: url("./fonts/MonotypeCorsiva.woff");
+  font-weight: bold;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -9,6 +15,7 @@
   --primary400: #b86dff;
   --primary500: #a649ff;
   --primary600: #9524ff;
+  --primary700: #6f00d9;
   --primary800: #5c00b3;
   --primary1000: #340066;
 
@@ -35,7 +42,7 @@ body {
 }
 
 .font-cursive {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "monoCursive", Courier, monospace;
 }
 /* @layer utilities {
   .hero-vector {
@@ -45,10 +52,10 @@ body {
 
 @layer utilities {
   .btn-purple-outline {
-    @apply hover:bg-primary-500 hover:text-base-White bg-transparent px-6 py-3 border-primary-500 rounded-full text-primary-500 ;
+    @apply hover:bg-primary-500 hover:text-base-White bg-transparent px-6 py-3 border-primary-500 rounded-full text-primary-500;
   }
   .btn-purple {
-    @apply bg-primary-500 text-base-White hover:bg-transparent px-6 py-3 border-primary-500 rounded-full hover:text-primary-500 ;
+    @apply bg-primary-600 text-base-White hover:bg-transparent px-6 py-3 border-primary-500 rounded-full hover:text-primary-500;
   }
 }
 

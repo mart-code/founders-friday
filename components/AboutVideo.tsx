@@ -4,7 +4,7 @@ import Button from "./Button";
 import { BsPlayCircleFill, BsArrowRight } from "react-icons/bs";
 const AboutVideo = () => {
   return (
-    <div className="justify-between items-stretch gap-8 2xl:min-h-[400px] xl:min-h-[300px] relative px-20 mx-auto md:flex-nowrap flex-wrap flex mt-[180px]">
+    <div className="justify-between items-stretch gap-8 2xl:min-h-[400px] xl:min-h-[300px] relative lg:px-20 px-5 mx-auto md:flex-nowrap flex-wrap flex mt-[180px]">
       <div className="relative">
         <Image
           src={"/IMG_2721 1.png"}
