@@ -1,6 +1,5 @@
 import Button from "./Button";
 import Image from "next/image";
-import { MdDoubleArrow } from "react-icons/md";
 
 const PreFooter = () => {
   return (
@@ -21,7 +20,14 @@ const PreFooter = () => {
         <h1 className="font-bold lg:text-5xl text-center">
           Want To Be A Part Of Abuja’s Biggest Tech Community?
         </h1>
-        <Button text="Register For Our Next Event" icon={<MdDoubleArrow />} />
+        <Button
+          type="button"
+          title="Register for Our Next Event"
+          icon={
+            <Image src="/right-arrow.png" width={50} height={50} alt="arrow" />
+          }
+          variant="btn-purple-outline"
+        />
       </div>
     </div>
   );

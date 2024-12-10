@@ -3,7 +3,7 @@ import Button from "./Button";
 import { FaSackDollar, FaArrowRight } from "react-icons/fa6";
 const WhoWeAre = () => {
   return (
-    <div className="px-20 mx-auto flex justify-between items-stretch gap-8 2xl:min-h-[400px] xl:min-h-[300px] relative">
+    <div className="px-20 mx-auto flex flex-wrap lg:flex-nowrap justify-between items-stretch gap-8 2xl:min-h-[400px] xl:min-h-[300px] relative">
       <Image
         src={"/IMG_2857 1.png"}
         width={500}
@@ -28,8 +28,18 @@ const WhoWeAre = () => {
             ideas, and foster collaboration.
           </p>
           <div className="flex gap-2 justify-between items-center">
-            <Button text="Register" dark={true} icon={<FaArrowRight />} />
-            <Button text="Donate" icon={<FaSackDollar />} />
+            <Button
+              type="button"
+              title="Register"
+              icon={<FaArrowRight />}
+              variant="btn-purple"
+            />
+            <Button
+              type="button"
+              title="Donate"
+              icon={<FaSackDollar />}
+              variant="btn-purple-outline"
+            />
           </div>
           <p className="font-semibold text-base">
             Founder's Friday is more than just a meetup — it's a movement.

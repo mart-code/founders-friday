@@ -3,13 +3,13 @@ import Image from "next/image";
 const Attendees = () => {
   return (
     <div className="px-20 mt-[180px] flex flex-col items-center justify-evenly mx-auto min-h-[565px] w-full">
-      <h1 className="font-bold 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl">
+      <h1 className="font-bold 2xl:text-5xl xl:text-4xl text-3xl text-center">
         What Do Our Attendees Have To Say?
       </h1>
-      <p className="font-normal 2xl:text-2xl xl:text-xl lg:text-lg text-[--secondary]">
+      <p className="font-normal 2xl:text-2xl xl:text-xl text-lg text-[--secondary]">
         Well See For Yourself!
       </p>
-      <div className="flex justify-center gap-4 items-center">
+      <div className="flex justify-center flex-wrap lg:flex-nowrap gap-8 items-center">
         <div className="flex flex-col justify-center items-center gap-4">
           <div className="p-4 border-2 rounded-full border-[--seed]">
             <Image

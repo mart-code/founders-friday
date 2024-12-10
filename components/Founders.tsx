@@ -3,7 +3,7 @@ import { BsArrowRight } from "react-icons/bs";
 import Button from "./Button";
 const Founders = () => {
   return (
-    <div className="mt-[180px] px-20 mx-auto flex justify-between gap-8 items-start basis-1/2">
+    <div className="mt-[180px] px-20 mx-auto flex justify-between gap-8 items-start basis-1/2 lg:flex-nowrap flex-wrap">
       <div className="flex flex-col items-start justify-center flex-1">
         <p className="font-bold lg:text-3xl text-[--primary800] max-w-[500px]">
           Founders Friday
@@ -11,7 +11,7 @@ const Founders = () => {
         <h2 className="font-bold lg:text-6xl">
           What Happens At Founders Friday
         </h2>
-        <p className="lg:text-2xl font-normal text-[--secondary] leading-7">
+        <p className="lg:text-2xl font-normal text-[--secondary] leading-7 my-[45px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac
           rutrum felis. Nulla nibh lorem, facilisis vel est at, vehicula
           dignissim lacus. Cras sagittis imperdiet dolor, eget accumsan leo
@@ -19,7 +19,12 @@ const Founders = () => {
           turpis. Pellentesque habitant morbi tristique senectus et netus et
           malesuada fames ac turpis egestas. 
         </p>
-        <Button dark={true} text="Learn more" icon={<BsArrowRight />} />
+        <Button
+          type="button"
+          title="Learn More"
+          icon={<BsArrowRight />}
+          variant="btn-purple"
+        />
       </div>
       <div className="relative min-w-[500px] min-h-[500px] basis-1/2">
         <Image

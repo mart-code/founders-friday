@@ -3,13 +3,13 @@ import Button from "./Button";
 import { BsArrowRight } from "react-icons/bs";
 const Register = () => {
   return (
-    <div className="flex flex-col items-center justify-between gap-2 px-20 mx-auto w-full min-h-[500px] text-center">
+    <div className="flex flex-col items-center justify-between gap-2 px-20 mx-auto w-full min-h-[500px] text-center mt-[180px]">
       <h1 className="font-bold text-5xl ">
         Register And Be Part of Our Community
       </h1>
       <p className="text-[--secondary]">
         Join our community of over 1000+ founders, developers, and tech junkies
-        in general.  Be inspired by people who live to inspire!
+        in general. Be inspired by people who live to inspire!
       </p>
       <div className="flex w-full justify-between gap-10 mt-[100px]">
         <div className="p-4 border-2 rounded-full border-[--seed]">
@@ -76,7 +76,12 @@ const Register = () => {
           />
         </div>
       </div>
-      <Button text='Register Now' icon={<BsArrowRight/>}/>
+      <Button
+        type="button"
+        title="Register Now"
+        icon={<BsArrowRight />}
+        variant="btn-purple-outline"
+      />
     </div>
   );
 };

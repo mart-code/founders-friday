@@ -14,6 +14,8 @@ export default function Home() {
   return (
     <>
       <Hero />
+     
+
       <WhoWeAre />
       <WhatWeOffer />
       <Register />
@@ -22,7 +24,7 @@ export default function Home() {
       <Sponsor />
       <StateVisit />
       <Attendees />
-      <FAQ/>
+      <FAQ />
       <PreFooter />
     </>
   );
